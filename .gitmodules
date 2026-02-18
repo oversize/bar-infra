@@ -1,0 +1,12 @@
+[submodule "ansible-spads-setup"]
+	path = ansible-spads-setup
+	url = git@github.com:beyond-all-reason/ansible-spads-setup.git
+[submodule "ansible-teiserver"]
+	path = ansible-teiserver
+	url = git@github.com:beyond-all-reason/ansible-teiserver.git
+[submodule "ansible-live-services"]
+	path = ansible-live-services
+	url = git@github.com:beyond-all-reason/ansible-live-services.git
+[submodule "ansible-monitoring"]
+	path = ansible-monitoring
+	url = git@github.com:beyond-all-reason/ansible-monitoring.git

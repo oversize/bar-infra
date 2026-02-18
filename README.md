@@ -7,7 +7,6 @@ maybe test out ideas in the infrastructure.
 
 ## Just some random thoughts
 
-
 ### Three Repositories
 
 There currently are three(?) ansible reposittories that build the infra. That
@@ -20,6 +19,12 @@ This currently leads to
 * Three different ssh keys
 
 yes, they are all(?) the same file contents but they are not the same files.
+
+> **Note**
+>
+> Oh, there is actually a fourth one now: https://github.com/beyond-all-reason/ansible-live-services
+> With a fourth ansible.cfg, ssh key and inventory ...
+
 
 ### The playbooks
 
@@ -57,8 +62,21 @@ recently have become quite fond of https://poethepoet.natn.io/ as a central
 way to "do stuff". Whether poe or not, having a more cohesive "admin cli"
 would be benefitial. A single repository could help
 
-### Other
+
+## Issues
+
+### Spads installer
 
 The  spads installer is hosted on http://planetspads.free.fr/.
 The first time i tried to run the playbook failed because that site was
 down. Why not use github.com as a store for the installer instead?
+
+
+### Monitoring
+
+I needed to comment out the monitoring stuff in both `roles/teiserver/tasks/main.yml`
+and `roles/spads/tasks/main.yaml` to be able to run the playbook.
+
+It could not find `ansible.builtin.import_tasks: monitoring.yml` and
+`ansible.builtinimport_role: name: beyondallreason.monitoring.client`.
+
