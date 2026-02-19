@@ -20,11 +20,6 @@ yes, they are all(?) the same file contents but they are not the same files.
 > Oh, there is actually a fourth one now: https://github.com/beyond-all-reason/ansible-live-services
 > With a fourth ansible.cfg, ssh key and inventory ...
 
-
-### The playbooks
-
-There are really quite a few playbooks.
-
 ### The inventories
 
 I like the inventories. Having a single inventory could make things a little
