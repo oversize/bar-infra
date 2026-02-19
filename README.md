@@ -1,10 +1,5 @@
 # BAR Infra
 
-This is my own personal place to work on bar infra. When initially trying
-to get into it (bar infrastructure), i was overwhelmed by the different
-repositories. This is just a place for me to pull things together and
-maybe test out ideas in the infrastructure.
-
 ## Just some random thoughts
 
 ### Three Repositories
